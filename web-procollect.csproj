@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>web_procollect</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Gestor\" />
+    <Folder Include="Pages\Reportes-Gerenciales\" />
+    <Folder Include="Pages\Seguridad\" />
+    <Folder Include="Pages\Administracion-de-esquemas\" />
+    <Folder Include="Pages\Administracion-de-esquemas\Esquemas\" />
+    <Folder Include="Pages\Administracion-de-esquemas\Vista-para-seguimiento\" />
+    <Folder Include="Pages\Configuracion\" />
+    <Folder Include="Pages\Configuracion\Catalogos\" />
+    <Folder Include="wwwroot\.nojekyll\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Pages\Administracion-de-esquemas\Vista-para-seguimiento\" />
+    <None Remove="Pages\Configuracion\" />
+    <None Remove="Pages\Configuracion\Catalogos\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,174 @@
+﻿@page
+@{
+    ViewData["Title"] = "Cliente_detalle";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+
+                    <div class="card-header">
+                        <h3 class="card-title">Cliente</h3>
+
+                        <div class="card-tools">
+
+
+
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-striped table-sm projects">
+                            <thead>
+                                <tr>
+
+                                    <th style="width: 20%">
+                                        Esquema
+                                    </th>
+                                    <th style="width: 30%">
+                                        Descripción
+                                    </th>
+                                    <th style="width: 20%">
+                                        Pantalla Gestión
+                                    </th>
+
+                                    <th style="width: 20%">
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="clickable-row table-active" data-href=''>
+
+                                    <td>
+                                        <a>
+                                            Emcofin
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a>
+                                            Almacenamiento de Información
+                                        </a>
+                                    </td>
+                                    <td class="">
+                                        <a>
+                                            No
+                                        </a>
+                                    </td>
+
+                                    <td class="project-actions text-right">
+                                        
+
+                                        <a class="btn btn-danger btn-sm" href="#">
+                                            <i class="fas fa-trash">
+                                            </i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr class='clickable-row' data-href='url://'>
+
+                                    <td>
+                                        <a>
+                                            Emcofin
+                                        </a>
+                                        <br />
+
+                                    </td>
+                                    <td>
+                                        <a>
+                                            Almacenamiento de Información
+                                        </a>
+                                    </td>
+                                    <td class="project_progress">
+                                        <a>
+                                            No
+                                        </a>
+                                    </td>
+
+
+                                    <td class="project-actions text-right">
+                                        <a class="btn btn-primary btn-sm" href="#">
+                                            <i class="fas fa-pencil-alt"></i>
+
+                                        </a>
+
+                                        <a class="btn btn-danger btn-sm" href="#">
+                                            <i class="fas fa-trash">
+                                            </i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- SELECT2 EXAMPLE -->
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title">Detalle</h3>
+
+                        <div class="card-tools">
+                            <a class="btn btn-tool" href="/seguridad/Grupos" role="button"> <i class="fas fa-times"></i></a>
+
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Esquema</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Esquema">
+                        </div>
+                        <div class="form-group">
+                            <label>Descripción</label>
+                            <textarea class="form-control" rows="3" placeholder="Descripción..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Pantalla Gestión</label>
+                            <select class="custom-select">
+                                <option>Sí</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+
+                        <div class="box-footer" style="padding-top:20px">
+                            <button type="button" class="btn btn-default">Borrar</button>
+                            <button type="button" class="btn btn-primary float-right">Guardar</button>
+                        </div>
+
+
+
+                        <!-- /.form-group -->
+
+
+                    </div>
+                    <!-- /.card-body -->
+
+                </div>
+                <!-- /.card -->
+
+            </div>
+            <!--/.col (left) -->
+        </div>
+        <!-- /.card -->
+
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

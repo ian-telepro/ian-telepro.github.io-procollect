@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - web_procollect</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->/
+    <link rel="stylesheet" href="~/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/adminlte/dist/css/adminlte.css">
+
+</head>
+<body class="hold-transition sidebar-mini text-sm skin">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-light">
+
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                        <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-slide="true" href="/login" role="button">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <div class="theme-switch-wrapper nav-link">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-link logo-switch">
+                <img src="~/adminlte/dist/img/n-navistar-white.png" alt="AdminLTE Docs Logo Small" class="brand-image-xl logo-xs">
+                <img src="~/adminlte/dist/img/navistar-white.png" alt="AdminLTE Docs Logo Large" class="brand-image-xs logo-xl" style="left: 12px">
+            </a>
+
+            <!-- Sidebar -->
+
+            <div class="sidebar">
+
+
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-child-indent text-sm nav-compact nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+    with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-user text-xs nav-icon" style="width: 1rem;"></i>
+                                <p>
+                                    Gestor
+                                    <i class="fas fa-angle-right right" style="top: .7rem;"></i>
+
+                                </p>
+                            </a>
+
+
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="~/gestor/MiCartera" class="nav-link">
+
+                                        <p style="padding-left:10px">Mi Cartera</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/gestor/Servicio_al_cliente" class="nav-link">
+
+                                        <p style="padding-left:10px">Servicio al cliente</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/gestor/Reportes_de_mi_cartera" class="nav-link">
+
+                                        <p style="padding-left:10px">Reportes de mi cartera</p>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="~/reportes-gerenciales/reportes" class="nav-link">
+                                <i class="fa fa-chart-line text-xs nav-icon" style="width: 1rem;"></i>
+                                <p>
+                                    Reportes Gerenciales
+
+                                </p>
+                            </a>
+
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-shield-alt text-xs nav-icon" style="width: 1rem;"></i>
+                                <p>
+                                    Seguridad
+                                    <i class="fas fa-angle-right right" style="top: .7rem;"></i>
+                                </p>
+                            </a>
+
+
+                            <ul class="nav nav-treeview">
+                                <li class="nav-header" style="text-indent:10px;">Administración del Sistema</li>
+                                <li class="nav-item">
+                                    <a href="~/seguridad/perfiles" class="nav-link">
+
+                                        <p style="padding-left:10px">Perfiles</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/seguridad/grupos" class="nav-link">
+                                        <p style="padding-left:10px">Grupos</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/seguridad/usuarios" class="nav-link">
+
+                                        <p style="padding-left:10px">Usuarios</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+
+                                        <p style="padding-left:10px">Configura Seguridad</p>
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-tasks text-xs nav-icon" style="width: 1rem;"></i>
+                                <p>
+                                    Administración de Esquemas
+                                    <i class="fas fa-angle-right right" style="top: .7rem;"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+
+                                        <p style="padding-left:10px">
+                                            Esquemas
+                                            <i class="fas fa-angle-right right" style="top: .7rem;"></i>
+                                        </p>
+
+                                    </a>
+                                    <ul class="nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="~/administracion-de-esquemas/esquemas/cliente" class="nav-link">
+
+                                                <p style="padding-left:10px">
+                                                    Cliente
+
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+
+                                                <p style="padding-left:10px">Configura_Grupos_Esquemas</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+
+                                                <p style="padding-left:10px">Configura_Grupos_Clientes</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+
+                                        <p style="padding-left:10px">Sincronizar</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+
+                                        <p style="padding-left:10px">
+                                            Vista para Seguimiento
+                                            <i class="fas fa-angle-right right" style="top: .7rem;"></i>
+                                        </p>
+
+                                    </a>
+                                    <ul class="nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="~/administracion-de-esquemas/vista-para-seguimiento/generar_vista" class="nav-link">
+
+                                                <p style="padding-left:10px">
+                                                    Generar Vista
+
+                                                </p>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-cogs text-xs nav-icon" style="width: 1rem;"></i>
+                                <p>
+                                    Configuración
+                                    <i class="fas fa-angle-right right" style="top: .7rem;"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+
+                                        <p style="padding-left:10px">
+                                            Catálogos
+                                            <i class="fas fa-angle-right right" style="top: .7rem;"></i>
+                                        </p>
+
+                                    </a>
+                                    <ul class="nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+
+                                                <p style="padding-left:10px">
+                                                    Actividades de Cobranza
+
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+
+                                                <p style="padding-left:10px">Periodo de Cartera Vencida</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="~/Configuracion/Catalogos/Codigos_de_clasificacion" class="nav-link">
+
+                                                <p style="padding-left:10px">Códigos de Clasificación</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+
+                                                <p style="padding-left:10px">Tipos de Telefono</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+
+                                                <p style="padding-left:10px">Ladas</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+
+                                        <p style="padding-left:10px">
+                                            Herramientas
+                                            <i class="fas fa-angle-right right" style="top: .7rem;"></i>
+                                        </p>
+
+                                    </a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+
+                                        <p style="padding-left:10px">
+                                            Politicas de Cobranza
+                                            <i class="fas fa-angle-right right" style="top: .7rem;"></i>
+                                        </p>
+
+                                    </a>
+
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        @RenderBody()
+
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.1.0
+            </div>
+            <strong>Copyright &copy; 2021 <a href="https://telepro.com.mx">Servicios Telepro S.A. de C.V.</a>.</strong> Reservados todos los derechos.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- jQuery -->
+    <script src="~/adminlte/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/adminlte/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/adminlte/dist/js/demo.js"></script>
+    <script>/** add active class and stay opened when selected */
+        var url = window.location;
+
+        // for sidebar menu entirely but not cover treeview
+        $('ul.nav-sidebar a').filter(function () {
+            return this.href == url;
+        }).addClass('active');
+
+        // for treeview
+        $('ul.nav-treeview a').filter(function () {
+            return this.href == url;
+        }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').prev('a').addClass('active');</script>
+
+
+    <script>var toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        var currentTheme = localStorage.getItem('theme');
+        var mainHeader = document.querySelector('.main-header');
+
+        if (currentTheme) {
+            if (currentTheme === 'dark') {
+                if (!document.body.classList.contains('dark-mode')) {
+                    document.body.classList.add("dark-mode");
+                }
+                if (mainHeader.classList.contains('navbar-light')) {
+                    mainHeader.classList.add('navbar-dark');
+                    mainHeader.classList.remove('navbar-light');
+                }
+                toggleSwitch.checked = true;
+            }
+        }
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                if (!document.body.classList.contains('dark-mode')) {
+                    document.body.classList.add("dark-mode");
+                }
+                if (mainHeader.classList.contains('navbar-light')) {
+                    mainHeader.classList.add('navbar-dark');
+                    mainHeader.classList.remove('navbar-light');
+                }
+                localStorage.setItem('theme', 'dark');
+            } else {
+                if (document.body.classList.contains('dark-mode')) {
+                    document.body.classList.remove("dark-mode");
+                }
+                if (mainHeader.classList.contains('navbar-dark')) {
+                    mainHeader.classList.add('navbar-light');
+                    mainHeader.classList.remove('navbar-dark');
+                }
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
+
+
+    @RenderSection("Scripts", required: false)
+
+
+</body>
+</html>
