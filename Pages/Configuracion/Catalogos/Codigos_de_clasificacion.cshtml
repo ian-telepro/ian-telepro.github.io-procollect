@@ -1,0 +1,283 @@
+﻿@page
+@{
+    ViewData["Title"] = "Codigos_de_clasificacion";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Códigos de Clasificación</h3>
+                <!-- Button trigger modal -->
+
+
+                <div class="card-tools">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                        <i class="fa fa-plus"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Nuevo Código de Clasifiación</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="form-group col-md-4">
+                                            <label for="">Jeraquia</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="6">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="">Clasificación</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Crédito Revolvente">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label>Descripción</label>
+                                            <textarea class="form-control" rows="3" placeholder="Descripción..."></textarea>
+                                        </div>
+                                        
+                                    </div>
+
+
+                                    <!-- /.form-group -->
+
+
+                                    <div class="row" style="padding-top: 20px;">
+
+                                        <div class="col-md-12">
+                                            <div class="card card-primary card-outline card-outline-tabs">
+                                                <div class="card-header p-0 border-bottom-0">
+                                                    <ul class="nav nav-tabs">
+                                                        <li class="nav-item"><a class="nav-link active" href="#grupo" data-toggle="tab">Esquema</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#actividad" data-toggle="tab">Nivel</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#clientes" data-toggle="tab">Datos</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#clientes" data-toggle="tab">Condición</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#clientes" data-toggle="tab">Expresión</a></li>
+                                                    </ul>
+                                                </div><!-- /.card-header -->
+                                                <div class="card-body">
+                                                    <div class="tab-content" id="custom-tabs-four-tabContent">
+                                                        <div class="tab-pane fade show active" id="Grupo" role="tabpanel">
+                                                            <div class="row">
+
+                                                            </div>
+                                                            <table class="table table-sm">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th style="width:5%"></th>
+                                                                        <th style="width:40%">Esquema</th>
+                                                                        <th style="width:55%">Descripción</th>
+                                                                        
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td> <input style="margin-left: 0;" class="form-check-input" type="checkbox"></td>
+                                                                        <td>EMCOFIN</td>
+                                                                        <td>Almacenamiento de Información</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> <input style="margin-left: 0;" class="form-check-input" type="checkbox"></td>
+                                                                        <td>Envio de FAX</td>
+                                                                        <td>Envio de FAX</td>
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> <input style="margin-left: 0;" class="form-check-input" type="checkbox"></td>
+                                                                        <td>Envio de Email</td>
+                                                                        <td>Envio de Email</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> <input style="margin-left: 0;" class="form-check-input" type="checkbox"></td>
+                                                                        <td>Cita Visita a Cliente</td>
+                                                                        <td>Cita Visita a Cliente</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> <input style="margin-left: 0;" class="form-check-input" type="checkbox"></td>
+                                                                        <td>Impresión Cartas</td>
+                                                                        <td>Impresión Cartas</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+
+                                                        </div>
+
+                                                        <!-- /.tab-pane -->
+
+
+
+                                                    </div>
+                                                    <!-- /.tab-content -->
+                                                </div><!-- /.card-body -->
+                                            </div>
+                                            <!-- /.card -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary swalDefaultSuccess" data-dismiss="modal" href="/seguridad/grupos">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-striped table-sm projects">
+                    <thead>
+                        <tr>
+
+                            <th style="width: 70%">
+                                Nombre
+                            </th>
+                            
+                            <th style="width: 30%">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="clickable-row">
+
+                            <td>
+                                <a>
+                                    Crédito de Nomina
+                                </a>
+                            </td>
+
+
+                            <td class="project-actions text-right">
+                                <a class="btn btn-primary btn-sm" href="/configuracion/catalogos/codigo_de_clasificacion_detalle">
+                                    <i class="fas fa-pencil-alt">
+                                    </i>
+
+                                </a>
+
+                                <a class="btn btn-danger btn-sm" href="#">
+                                    <i class="fas fa-trash">
+                                    </i>
+
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="clickable-row">
+
+                            <td>
+                                <a>
+                                    Crédito Simple
+                                </a>
+                            </td>
+
+
+                            <td class="project-actions text-right">
+                                <a class="btn btn-primary btn-sm" href="/seguridad/Usuario_detalle">
+                                    <i class="fas fa-pencil-alt">
+                                    </i>
+
+                                </a>
+
+                                <a class="btn btn-danger btn-sm" href="#">
+                                    <i class="fas fa-trash">
+                                    </i>
+
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="clickable-row">
+
+                            <td>
+                                <a>
+                                    Arrendamiento Puro
+                                </a>
+                            </td>
+
+
+                            <td class="project-actions text-right">
+                                <a class="btn btn-primary btn-sm" href="/seguridad/Usuario_detalle">
+                                    <i class="fas fa-pencil-alt">
+                                    </i>
+
+                                </a>
+
+                                <a class="btn btn-danger btn-sm" href="#">
+                                    <i class="fas fa-trash">
+                                    </i>
+
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="clickable-row">
+
+                            <td>
+                                <a>
+                                    Factoraje Financiero
+                                </a>
+                            </td>
+
+
+                            <td class="project-actions text-right">
+                                <a class="btn btn-primary btn-sm" href="/seguridad/Usuario_detalle">
+                                    <i class="fas fa-pencil-alt">
+                                    </i>
+
+                                </a>
+
+                                <a class="btn btn-danger btn-sm" href="#">
+                                    <i class="fas fa-trash">
+                                    </i>
+
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="clickable-row">
+
+                            <td>
+                                <a>
+                                    Crédito Revolvente
+                                </a>
+                            </td>
+
+
+                            <td class="project-actions text-right">
+                                <a class="btn btn-primary btn-sm" href="/seguridad/Usuario_detalle">
+                                    <i class="fas fa-pencil-alt">
+                                    </i>
+
+                                </a>
+
+                                <a class="btn btn-danger btn-sm" href="#">
+                                    <i class="fas fa-trash">
+                                    </i>
+
+                                </a>
+                            </td>
+                        </tr>
+                      
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
+
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
